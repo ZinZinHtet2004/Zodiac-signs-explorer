@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zodiac Sign Calculator</title>
+<link rel="stylesheet" href="calculator.css"/>
+<style>
+    .container {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#calculator {
+    background-color:var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    border: 1px solid rgb(198, 152, 160);
+}
+h1{
+    color:rgb(198, 152, 160);
+    margin-bottom: 20px;
+}
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(198, 152, 160);
+    color:var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e2a6a6;
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+#zodiacImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#imgContainer{
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+img{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    margin-right: 70px;
+    color:rgb(198, 152, 160);
+}
+</style>
+</head>
+<body>
+    <div id="wholeWrap">
+        <div class="header">
+            <div class="headBox">
+                 <h2 style="font-family: Pacifico, cursive;margin-right: 120px;">Zodiac Signs Explorer</h2>
+                 <a href="index.html" class="headBar" >ZODIAC SIGNS</a>
+                 <a href="calculator.html" class="headBar">CALCULATOR</a>
+                 <a href="element.html"class="headBar" >ELEMENTS</a>
+                 <img  src="moon.png" id="icon" style="width: 40px;cursor: pointer;"/>
+             </div>
+         </div>
+        </div>
+        <div id="signBox">
+            <div id="signBoxWrapper">
+                <div id="column">
+                    <div id="signcard"><span>Aries</span> March 21 - April 19</div>
+                    <div id="signcard"><span>Aquarius</span> January 20 - February 18</div>
+                    <div id="signcard"><span>Pisces</span> February 19 - March 20</div>
+                    <div id="signcard"><span>Taurus</span> April 20 - May 20</div>
+                </div>
+                <div id="column">
+                    <div id="signcard"><span>Gemini</span> May 21 - June 20</div>
+                    <div id="signcard"><span>Cancer</span> June 21 - July 22</div>
+                    <div id="signcard"><span>Leo</span> July 23 - August 22</div>
+                    <div id="signcard"><span>Virgo</span> August 23 – September 22</div>
+                </div>
+                <div id="column">
+                    <div id="signcard"><span>Libra</span> September 23 - October 22</div>
+                    <div id="signcard"><span>Scorpio</span> October 23 - November 21</div>
+                    <div id="signcard"><span>Sagittarius</span> November 22 - December 21</div>
+                    <div id="signcard"><span>Capricorn</span> December 22 - January 19</div>
+                </div>
+            </div>
+         </div>
+     </div>
+<div class="container">
+    <h1>ကိုယ့်ရဲ့ရာသီခွင်ကိုရှာဖွေကြရအောင်!!</h1>
+    <div id="calculator">
+        <h1>Zodiac Sign Calculator</h1>
+        <input type="date" id="birthdate">
+        <button onclick="calculateZodiac()">Calculate</button>
+        <div id="result"></div>
+        <div id="imgContainer">
+            <img src="" id="zodiacImage" alt="Zodiac Sign Image">
+        </div>
+        
+    </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body{
+    font-family: "Roboto", sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif; 
+}
+/*mouse over box*/
+#wholeWrap{
+    width: 100%;
+    height: 220px;
+    border-bottom: 7px solid #F0DFDC;
+}
+.header{
+    height: 50px;
+    background-color: var(--secondary-color);
+    z-index: 1;
+    padding:9px ;  
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    font-style: italic;
+    color:var(--primary-color);
+}
+.headBox{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+}
+#signBox{
+    display:none;
+}
+#signBoxWrapper{
+    padding: 30px 50px;
+    left: 150px;
+    top: 65px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 64%;
+    z-index: 3;
+    background-color:var(--secondary-color);
+    box-shadow: 1px 1px 1px  5px #fee1e1;
+}
+#column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 5px;
+}
+#signcard{
+    font-size: 15px;
+    width: 270px;
+    margin: 5px 5px;
+    text-align: center;
+    padding: 10px 0px;
+    border: 1px solid var(--primary-color);
+}
+#signcard:hover{
+   font-weight: bold;
+}
+.container{
+    width: 95%;
+    margin:  0px auto;
+}
+#title{
+    color: rgb(210, 153, 153);
+    text-align: center;
+    font-size: 55px;
+    font-style: italic;
+    font-family: Pacifico, cursive;
+}
+.box{
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+}
+/*left*/
+#left{
+    width: 50%;
+}
+#leftBox{
+    margin-left: 50px;
+}
+ul{
+    list-style: none;
+    font-size: 20px; 
+}
+li{
+    margin-top: 14px;
+}
+span{
+    color: brown;
+    margin: 0 10px;
+}
+#bolding{
+    color:brown;
+}
+/*right*/
+#right{
+    width: 25%;
+}
+#rightBox{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+/*personalityHeader*/
+#personalityHeader{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top:50px ;
+}
+/*personality*/
+#personality{
+    width: 90%;
+    margin: 0 auto;
+}
+/*paragraph*/
+#par{
+    padding: 50px 50px;
+    line-height: 30px;
+    font-size: 18px;
+}
+#footp{
+    margin-bottom: 30px;
+}
+/*light-dark mode */
+:root{
+    --primary-color:black;
+    --secondary-color:white;
+}
+.darktheme{
+    --primary-color:white;
+    --secondary-color:black;
+}
